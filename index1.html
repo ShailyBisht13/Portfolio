@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+<title>Shaily Bisht Portfolio</title>
+<style>
+h1 {
+color: rgb(130, 56, 56);
+}
+body {
+background-color: rgb(213, 211, 211);
+}
+.about-me {
+background-color: white;
+color: black;
+padding: 0px 20px;
+border-radius: 10px;
+width: 97%;
+margin: 10px auto;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.box {
+background-color: white;
+color: black;
+padding: 30px 20px;
+border-radius: 10px;
+width: 97%;
+margin: 10px auto;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.skills {
+display: flex;
+justify-content: space-between;
+gap: 20px;
+flex-wrap: wrap;
+}
+.skills-box {
+width: 48%;
+}
+ul {
+list-style-type: disc;
+padding-left: 20px;
+}
+a {
+text-decoration: none;
+}
+.card-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+padding: 10px auto;
+padding: 0;
+width: 97%;
+}
+.card {
+background-color: transparent;
+box-shadow: none;
+padding: 15px;
+margin: 0;
+}
+.card button {
+background-color: rgb(130, 56, 56);
+color: white;
+border: none;
+padding: 8px 12px;
+border-radius: 5px;
+cursor: pointer;
+}
+.model {
+display: none;
+position: fixed;
+z-index: 999;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.6);
+}
+.model-content {
+background-color: white;
+margin: 10% auto;
+padding: 20px;
+border-radius: 10px;
+width: 60%;
+}
+.close {
+float: right;
+font-size: 20px;
+cursor: pointer;
+}
+.slider {
+display: flex;
+overflow-x: auto;
+gap: 20px;
+padding: 10px 20px;
+scroll-behavior: smooth;
+}
+.slider a {
+min-width: 20px;
+background-color: white;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h1 align="center">Shaily Bisht Portfolio</h1>
+<div class="about-me">
+<h2>About Me</h2>
+</div>
+<p>
+Hello! I'm a passionate and dedicated B.Tech student in Computer Science and Engineering, currently pursuing my degree at Women Institute of Technology. I have a strong interest in web development, programming, and solving real-world problems through technology.
+My academic journey has helped me build a solid foundation in languages like C++, Python, and JavaScript, along with hands-on experience in HTML, CSS, and modern frameworks. I'm a quick learner, curious by nature, and always eager to explore new technologies.
+I enjoy working on projects that challenge me to think critically and creatively. Whether it's developing a responsive website or contributing to a team project, I strive to give my best and keep improving with every step.
+Outside of academics, I enjoy designing, exploring open-source tools, and participating in tech events and workshops to stay updated and inspired.
+</p>
+<div class="about-me">
+<h2>Skills</h2>
+</div>
+<div class="skills">
+<div class="skills-box">
+<h3>Technical Skills</h3>
+<ul>
+<li>
+Languages: C++, Java, Python.
+</li>
+<li>
+Web Technologies: HTML, CSS, JavaScript.
+</li>
+<li>
+Tools & Platforms: Git, GitHub, Linux (Kali).
+</li>
+<li> 
+Concepts: OOP, DSA.
+</li>
+</ul>
+</div>
+<div class="skills-box">
+<h3>Soft Skills</h3>
+<ul>
+<li>
+Communication, Collaboration.
+</li>
+<li>
+Event Coordination (College-level).
+</li>
+<li>
+Problem solving, Critical thinking.
+</li>
+<li> 
+Teamwork, Time management.
+</li>
+</ul>
+</div>
+</div>
+<div class="about-me">
+<h2>Projects</h2>
+</div>
+<div class="card-container">
+<div class="card">
+<h3>C++ Projects</h3>
+<p>Banking System in C++, Tic Tac Toe, etc.
+</p>
+<button onclick="openModel('C++')">View More</button>
+</div>
+<div class="card">
+<h3>Python Game</h3>
+<p>Snake Game, Hangman, Apple- bobbing, Hangman, etc.</p>
+<button onclick="openModel('python')">View More</button>
+</div>
+</div>
+<div id="python" class="model">
+<div class="model-content">
+<span class="close" onclick="closeModel('python')">&times;</span>
+<h3>Python Games</h3>
+<p>Include multiple CLI games like Snake, Hangman, Apple-bobbing using loops, conditionals, and random module.</p>
+</div>
+</div>
+<div id="C++" class="model">
+<div class="model-content">
+<span class="close" onclick="closeModel('C++')">&times;</span>
+<h3>C++ Projects</h3>
+<p>Banking System: Simulate basic banking operations using object-oriented principles, file handling, and error checking.<br>
+Tic Tac Toe: It uses loops, conditions, anf functions for input, display, and result-checking.
+</p>
+</div>
+</div>
+<div class="about-me">
+<h2>Resume</h2>
+</div>
+<a href="ShailyBisht_Resume.pdf" target="_blank">Open Resume in New Tab</a>
+<br>
+<a href="ShailyBisht_Resume.pdf" download>Download Resume (PDF)</a>
+<div class="about-me">
+<h2>Certificates (Slider)</h2>
+</div>
+<div class="slider">
+<a href="C++.pdf" target="_blank">C++ Certificate</a>
+<a href="html.pdf" target="_blank">HTML Certificate</a>
+</div>
+<div class="about-me">
+<h2>Contact Details</h2>
+</div>
+<p>E-mail: shailyshubhi176@gmail.com</p>
+<a href="https://github.com/ShailyBisht13" target="_blank">Github</a>
+<br>
+<a href="https://www.linkedin.com/in/Shaily Bisht/" target="_blank">LinkedIn </a>
+<footer style="text-align: center; padding: 10px; color: black;">
+<p>
+&copy; 2025 Shubhi Shaily. All rights reserved.
+</p>
+</footer>
+<script>
+function openModel(id) {
+document.getElementById(id).style.display="block";
+}
+function closeModel(id) {
+document.getElementById(id).style.display="none";
+}
+window.onclick = function(event) {
+if (event.target.classList.contains('model')) {
+event.target.style.display="none";
+}
+}
+</script>
+</body>
+</html>
